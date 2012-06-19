@@ -1,0 +1,50 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+PSP_EXPORT_START (syslib, 0, 0x8000)
+PSP_EXPORT_FUNC_HASH (module_start)
+PSP_EXPORT_FUNC_HASH (module_stop)
+PSP_EXPORT_FUNC_HASH (module_reboot_before)
+PSP_EXPORT_VAR_HASH (module_info)
+PSP_EXPORT_END
+
+PSP_EXPORT_START (sceUsb, 0x0011, 0x4001)
+PSP_EXPORT_FUNC_HASH (sceUsbStart)
+PSP_EXPORT_FUNC_HASH (sceUsbStop)
+PSP_EXPORT_FUNC_HASH (sceUsbGetState)
+PSP_EXPORT_FUNC_HASH (sceUsbGetDrvList)
+PSP_EXPORT_FUNC_HASH (sceUsbGetDrvState)
+PSP_EXPORT_FUNC_HASH (sceUsbActivate)
+PSP_EXPORT_FUNC_HASH (sceUsbDeactivate)
+PSP_EXPORT_FUNC_HASH (sceUsbWaitState)
+PSP_EXPORT_FUNC_HASH (sceUsbWaitCancel)
+PSP_EXPORT_END
+
+PSP_EXPORT_START (sceUsb_driver, 0x0011, 0x1)
+PSP_EXPORT_FUNC_HASH (sceUsbStart)
+PSP_EXPORT_FUNC_HASH (sceUsbStop)
+PSP_EXPORT_FUNC_HASH (sceUsbGetState)
+PSP_EXPORT_FUNC_HASH (sceUsbGetDrvList)
+PSP_EXPORT_FUNC_HASH (sceUsbGetDrvState)
+PSP_EXPORT_FUNC_HASH (sceUsbActivate)
+PSP_EXPORT_FUNC_HASH (sceUsbDeactivate)
+PSP_EXPORT_FUNC_HASH (sceUsbWaitState)
+PSP_EXPORT_FUNC_HASH (sceUsbWaitCancel)
+PSP_EXPORT_END
+
+PSP_EXPORT_START (sceUsbBus_driver, 0x0011, 0x1)
+PSP_EXPORT_FUNC_HASH (sceUsbGetState)
+PSP_EXPORT_FUNC_HASH (sceUsbbdRegister)
+PSP_EXPORT_FUNC_HASH (sceUsbbdUnregister)
+PSP_EXPORT_FUNC_HASH (sceUsbbdClearFIFO)
+PSP_EXPORT_FUNC_HASH (sceUsbbdStall)
+PSP_EXPORT_FUNC_HASH (sceUsbbdReqSend)
+PSP_EXPORT_FUNC_HASH (sceUsbbdReqRecv)
+PSP_EXPORT_FUNC_HASH (sceUsbbdReqCancel)
+PSP_EXPORT_FUNC_HASH (sceUsbbdReqCancelAll)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS
+
+
+
